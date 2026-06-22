@@ -54,17 +54,25 @@ body {
   transform: translateY(0.2rem);
 }
 
+.logo {
+  width: 30rem;
+}
+
 @media only screen and (max-width: 600px) {
   .header {
     background: url(../assets/photos/banner-mobile.png);
     background-size: cover;
   }
-}
 
-.navbar {
-  flex-direction: column;
-}
+  .navbar {
+    flex-direction: column;
+  }
 
-.nav-item {
-  width: max-content;
+  .nav-item {
+    width: max-content;
+  }
+
+  .logo {
+    width: 20rem;
+  }
 }
