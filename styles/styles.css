@@ -59,6 +59,7 @@ body {
 
 .logo {
   width: 30rem;
+  max-width: 90%;
 }
 
 /* Buttons */
@@ -114,11 +115,66 @@ body {
 }
 
 .menu .button {
-  margin: 2rem 0;
+  margin: 2rem 0 5rem;
 }
 
-.purple {
+.menu .purple {
   color: var(--Purple);
+}
+
+.menu-items {
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3rem;
+}
+
+.menu-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.menu-item:hover {
+  transform: translateY(-5px);
+}
+
+.menu-item-image {
+  width: 100%;
+  border-radius: 2rem;
+  margin-bottom: -5rem;
+  display: block;
+}
+
+.menu-item-text {
+  background-color: var(--White);
+  color: var(--Purple);
+  text-align: center;
+  border-radius: 2rem;
+  padding: 2rem;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 1rem;
+}
+
+.menu-item-text p {
+  font-size: 1.6rem;
+  line-height: 1.8;
+}
+
+@media only screen and (max-width: 992px) {
+  .menu-items {
+    grid-template-columns: 45% 45%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .menu-items {
+    grid-template-columns: 90%;
+  }
 }
 
 /* Typography */
@@ -152,6 +208,15 @@ h2 {
   .button {
     font-size: 2.2rem;
     padding: 1rem 3rem;
+  }
+
+  .menu-items {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  p {
+    font-size: 1.5rem;
   }
 
   h1,
