@@ -1,0 +1,9 @@
+@font-face {
+  font-family: vazir;
+  src: url(../assets/fonts/Vazirmatn-VariableFont_wght.ttf);
+}
+
+body {
+  font-family: vazir, Arial, Helvetica, sans-serif;
+  background-color: aquamarine;
+}
