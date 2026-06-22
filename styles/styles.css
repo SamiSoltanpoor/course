@@ -58,6 +58,30 @@ body {
   width: 30rem;
 }
 
+.button {
+  background-color: var(--Yellow);
+  color: var(--Purple);
+  border-radius: 2rem;
+  padding: 1rem 2rem;
+  font-size: 3rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.2s ease-in-out;
+}
+
+.header .button {
+  margin: 2rem;
+}
+
+.button-yellow {
+  background-color: var(--Yellow);
+  color: var(--Purple);
+}
+
+.button-yellow:hover {
+  background-color: var(--White);
+}
+
 @media only screen and (max-width: 600px) {
   .header {
     background: url(../assets/photos/banner-mobile.png);
